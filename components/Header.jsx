@@ -22,10 +22,10 @@ const Header = () => {
             </Link>            
             </div>
             
-            <div className='hidden md:float-left md:contents'>
+            <div className='md:hidden lg:float-left lg:text-sm lg:contents flex items-center justify-center text-[8px] -mt-0.5 -mb-2.5'>
                 {categories.map((category) => (
                     <Link key={category.slug} href={`/category/${category.slug}`}>
-                        <span className='md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer'>
+                        <span className='md:float-right mt-2 align-middle text-white ml-1 font-semibold cursor-pointer'>
                             {category.name}
                             </span>
                     </Link>
@@ -34,7 +34,7 @@ const Header = () => {
         </div>   
         <div className='flex items-center justify-center flex-col mt-0 text-white -mt-6 lg:-mt-12 title'>
         <span className='tracking-wide font-semibold w-max text-base font-semibold lg:text-5xl md:text-4xl'>Welcome to TeeDave's Blog</span><br />
-        <span className='-mt-[27px] font-medium text-[9px] w-max lg:text-xl md:text-xl'><span className='italic'>bringing you the latest news, gossip, trending topics, updates and more</span>😎</span>
+        <span className='-mt-[27px] font-medium text-[9px] w-max lg:text-xl md:text-xl'><span className='italic'>bringing you the latest news, gossip, trending topics, updates and more </span>😎</span>
         </div>     
     </div>
   )

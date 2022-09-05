@@ -239,7 +239,28 @@ export const getRecentPosts = async () => {
     query GetPostDetails() {
       posts(
         orderBy: createdAt_ASC
-        last: 3
+        last: 5
+      ) {
+        title
+        featuredImage {
+          url
+        }
+        createdAt
+        slug
+      }
+    }
+  `;
+  const result = await request(graphqlAPI, query);
+
+  return result.posts;
+};
+
+export const getOlderPosts = async () => {
+  const query = gql`
+    query GetPostDetails() {
+      posts(
+        orderBy: createdAt_DESC,
+        last: 5
       ) {
         title
         featuredImage {
