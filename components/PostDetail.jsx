@@ -44,6 +44,7 @@ const PostDetail = ({ post }) => {
 
   return (
     <div className='bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8'>
+      <div className='px-2 pt-5 lg:pt-0 lg:px-0'>
       <div className='relative overflow-hidden shadow-md mb-6'>
         <img
           src={post.featuredImage.url}
@@ -79,6 +80,7 @@ const PostDetail = ({ post }) => {
             return getContentFragment(index, children, typeObj, typeObj.type)
           })}
       </div>
+    </div>
     </div>
   )
 }
