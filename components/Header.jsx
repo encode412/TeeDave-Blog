@@ -32,9 +32,9 @@ const Header = () => {
                 ))}
         </div>        
         </div>   
-        <div className='flex items-center justify-center flex-col mt-0 text-white lg:-mt-12 title'>
-        <span className='tracking-wide font-semibold text-sm font-semibold lg:text-5xl md:text-4xl'>Welcome to TeeDave's Blog</span><br />
-        <p className='italic -mt-5 font-medium text-sm lg:text-xl md:text-xl'>bringing you the latest updates and more...</p>
+        <div className='flex items-center justify-center flex-col mt-0 text-white -mt-6 lg:-mt-12 title'>
+        <span className='tracking-wide font-semibold w-max text-base font-semibold lg:text-5xl md:text-4xl'>Welcome to TeeDave's Blog</span><br />
+        <span className='italic -mt-[27px] font-medium text-[9px] w-max lg:text-xl md:text-xl'>bringing you the latest news, gossip, trending topics, updates and more...:)</span>
         </div>     
     </div>
   )
