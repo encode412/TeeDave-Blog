@@ -23,8 +23,8 @@ const PostWidget = ({ categories, slug }) => {
   useEffect(() => {   
     getOlderPosts()
     .then((result) => setOlderPosts(result))
-  // eslint-disable-next-line react-hooks/exhaustive-deps  
- }, [])
+  
+ }, [slug])
   
   
   return (
