@@ -18,7 +18,7 @@ const Header = () => {
             <div className='md:float-left block'>
             <Link href='/'>
                 {/* <span  className='cursor-pointer font-bold text-4xl text-white'>TeeDave</span> */}
-                <img src='/logo.png' width='30%' className='cursor-pointer' />
+                <img src='/logo.png' width='30%' className='cursor-pointer' alt='teedave logo' />
             </Link>            
             </div>
             
