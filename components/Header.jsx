@@ -1,5 +1,6 @@
 import React, { useState, useEffect} from 'react';
-import Link from 'next/link';
+import Link from 'next/link';\
+import Image from 'next/image';
 
 import { getCategories } from '../services';
 
@@ -18,7 +19,7 @@ const Header = () => {
             <div className='md:float-left block'>
             <Link href='/'>
                 {/* <span  className='cursor-pointer font-bold text-4xl text-white'>TeeDave</span> */}
-                <img src='/logo.png' width='30%' className='cursor-pointer' />
+                <Image src='/logo.png' width='30%' className='cursor-pointer' />
             </Link>            
             </div>
             
