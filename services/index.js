@@ -275,3 +275,32 @@ export const getOlderPosts = async () => {
 
   return result.posts;
 };
+
+export const getMatchLinks = async () => {
+  const query = gql`
+  query GetMatchLinks {
+    matchLinks  {  
+      name 
+      blogId   
+      slug      
+    }
+  }
+  `
+  const result = await request(graphqlAPI, query);
+
+  return result.matchLinks;
+}
+
+export const getMatchLink = async () => {
+  const query = gql`
+  query GetMatchLink{
+    matchLink  {            
+      slug
+      blogId      
+    }
+  }
+  `
+  const result = await request(graphqlAPI, query);
+
+  return result.matchLink;
+}
