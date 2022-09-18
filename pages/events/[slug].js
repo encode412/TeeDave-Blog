@@ -14,12 +14,13 @@ const MatchDay = () => {
 
   return (
     <div>      
-      <h1 className='text-lg lg:text-3xl text-white text-center font-bold'>Match-Day Live!!!!!! </h1>
-        <div className='flex justify-center align-center'>
+      <h1 className='text-lg lg:text-3xl text-white text-center font-bold'>Match-Day Live!!!</h1>        
           {matchLink.map((m) => 
-          <iframe key={m.name} src={m.slug} className='border-solid border-4 h-[34rem] lg:h-96'name="myiFrame" scrolling="no" frameBorder="1" marginHeight="0px" marginWidth="0px" width="1000px" allowFullScreen></iframe>
-          )}        
-      </div>
+          <div key={m.name} className='flex flex-col justify-center items-center'>
+            <div className='text-lg lg:text-3xl text-white font-bold'>{m.name}</div>
+          <iframe  src={m.slug} className='border-solid border-4 h-[34rem] lg:h-96'name="myiFrame" scrolling="no" frameBorder="1" marginHeight="0px" marginWidth="0px" width="1000px" allowFullScreen></iframe>
+          </div>
+          )}              
       {matchLink.map((m) =>                     
       <div key={m.name} id="LB24_LIVE_CONTENT" data-eid={m.blogId}></div>
       )} 
