@@ -20,15 +20,16 @@ export default function Home({posts}) {
              <PostCard post={post.node} key={post.title}/>              
             ))}
             </div>
+            
             <div className='lg:col-span-4 col-span-1'>
               <div className='lg:sticky relative top-8'>
                  <PostWidget />
                  <Categories />
               </div>
             </div>
-         </div>  
+         </div>          
          <div className=' border-t border-blue-40 p-5 pt-5 mt-7 text-center'>
-         <span className='text-white'><span className='font-semibold'>TeeDave-</span> CopyRight © 2022 Timothy Austin. All Rights Reserved</span>   
+        
          </div>
          </div>
   )
